@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "5cb771e4-fc95-4b6c-8fb7-2d75fed74f71",
+		"name": "SWAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28154557"
+	},
+	"item": [
+		{
+			"name": "Planet",
+			"item": [
+				{
+					"name": "All planets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}planets",
+							"host": [
+								"{{url}}planets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Planet",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}planets/1/",
+							"host": [
+								"{{url}}planets"
+							],
+							"path": [
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Schema",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}planets/schema",
+							"host": [
+								"{{url}}planets"
+							],
+							"path": [
+								"schema"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://swapi.dev/api/",
+			"type": "string"
+		}
+	]
+}
